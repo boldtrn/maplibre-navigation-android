@@ -45,6 +45,7 @@ dependencies {
     implementation(dependenciesList.mapLibre){
         exclude group: 'com.mapbox.mapboxsdk', module: 'mapbox-sdk-geojson'
         exclude group: 'com.mapbox.mapboxsdk', module: 'mapbox-sdk-turf'
+        exclude group: "com.google.android.gms", module: 'play-services-location'
     }
 
     compileOnly dependenciesList.gmsLocation
