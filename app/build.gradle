@@ -60,8 +60,6 @@ dependencies {
     implementation dependenciesList.androidxCardView
     implementation dependenciesList.lifecycleExtensions
 
-    implementation dependenciesList.gmsLocation
-
     // Logging
     implementation dependenciesList.timber
 

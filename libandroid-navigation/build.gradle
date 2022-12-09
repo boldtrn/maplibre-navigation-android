@@ -48,7 +48,11 @@ dependencies {
         exclude group: "com.google.android.gms", module: 'play-services-location'
     }
 
-    implementation dependenciesList.gmsLocation
+    implementation('com.google.android.gms:play-services-location') {
+        version {
+            strictly '21.0.1'
+        }
+    }
 
     // Support
     implementation dependenciesList.androidxAppcompat
