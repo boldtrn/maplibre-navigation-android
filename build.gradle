@@ -1,22 +1,20 @@
 apply plugin: 'com.github.kt3k.coveralls'
 
 buildscript {
-    ext.kotlin_version = '1.7.20'
     apply from: "${rootDir}/gradle/dependencies.gradle"
 
   repositories {
     google()
-    jcenter()
+    mavenCentral()
     maven { url 'https://plugins.gradle.org/m2' }
   }
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:4.2.2'
     classpath pluginDependencies.gradle
     classpath pluginDependencies.coveralls
     classpath pluginDependencies.errorprone
     classpath pluginDependencies.dependencyUpdates
-      classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    classpath pluginDependencies.kotlinGradle
   }
 }
 

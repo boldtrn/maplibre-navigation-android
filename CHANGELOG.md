@@ -2,7 +2,16 @@
 
 Maplibre welcomes participation and contributions from everyone.
 
+### v1.3.0 - unreleased
+
+- Update Maplibre to 9.5.2
+- Updated dependencies of used libs and build tools
+- Removed AccessToken usage
+- Fixed Jitpack Build
+
 ### v1.2.0 - November 21, 2022 
+
+(Please use v1.2.1, as the Release Build failed at Jitpack)
 
 - Fixed unit tests and updated some build dependencies. 
 - Added Flags for pending intents which are required in Android 31+
