@@ -12,7 +12,6 @@ ext {
             mapLibreVersion        : '9.5.2',
             mapLibreService        : '5.9.0',
             mapLibreTurf           : '5.9.0',
-            mapLibreAnnotations    : '1.0.0',
             autoValue              : '1.10.1',
             autoValueParcel        : '0.2.5',
             junit                  : '4.13.2',
@@ -37,7 +36,7 @@ ext {
             lifecycle              : '1.1.1',
             lifecycleVersion       : '2.2.0',
             picasso                : '2.71828',
-            gmsLocation            : '16.0.0',
+            gmsLocation            : '21.0.1',
             testRulesVersion       : '1.5.0'
     ]
 
@@ -58,7 +57,6 @@ ext {
             mapLibre                : "org.maplibre.gl:android-sdk:${version.mapLibreVersion}",
             mapLibreServices        : "org.maplibre.gl:android-sdk-services:${version.mapLibreService}",
             mapLibreTurf            : "org.maplibre.gl:android-sdk-turf:${version.mapLibreTurf}",
-            mapLibreAnnotations     : "org.maplibre.gl:android-plugin-annotation-v9:${version.mapLibreAnnotations}",
 
             // AutoValue
             autoValue               : "com.google.auto.value:auto-value:${version.autoValue}",

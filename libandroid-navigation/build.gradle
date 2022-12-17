@@ -40,11 +40,16 @@ android {
 }
 
 dependencies {
-    api dependenciesList.mapLibreServices
-    api dependenciesList.mapLibreTurf
+    api (dependenciesList.mapLibreServices) {
+        exclude group: 'com.google.android.gms'
+    }
+    api (dependenciesList.mapLibreTurf) {
+        exclude group: 'com.google.android.gms'
+    }
     implementation(dependenciesList.mapLibre){
         exclude group: 'com.mapbox.mapboxsdk', module: 'mapbox-sdk-geojson'
         exclude group: 'com.mapbox.mapboxsdk', module: 'mapbox-sdk-turf'
+        exclude group: 'com.google.android.gms'
     }
 
     compileOnly dependenciesList.gmsLocation
