@@ -40,6 +40,7 @@ data class LegAnnotation(
      *
      * @since 3.0.0
      */
+    @SerialName("maxspeed")
     val maxSpeed: List<MaxSpeed>?,
 
     /**
